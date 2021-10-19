@@ -1,0 +1,81 @@
+input{
+/* width: 100%; */
+/* height: 100%; */
+height: 50px !important;
+width: 450px;
+margin-bottom: 30px !important;
+}
+input::placeholder{
+    padding-left: 20px;
+}
+textarea::placeholder{
+    padding-left: 20px;
+}
+
+/* set background color appoinment section */
+.detials{
+
+	position: absolute;
+    background-color: red ;
+    background: linear-gradient(to right, #FF9668, #fda37d);
+    background-attachment: fixed; 
+    transform: skewY(-9deg);
+    width: 100%;
+    height: 250px; 
+    z-index: -1;
+    content: '';
+	transform-origin: top right;
+
+}
+.appoinmantDetials{
+display: grid;
+grid-template-columns: repeat(2,60vh);
+justify-content: center;
+align-items: center;
+margin-left: 4%;
+margin-top: 200px;
+}
+
+
+/* ---------------------
+   media query
+----------------- */
+/* for mobile */
+@media (max-width:601px) {
+ .appoinmantDetials{
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 50px;
+ }  
+ .detials{
+     display: none;
+ }
+ .serviceTime aside{
+     width:  70% !important;
+     margin-left: 18%;
+ }
+ .appoinmantDetials {
+    width: 90% !important;
+    margin-top: 100px;  
+}
+.appoinmantDetials  h2 , .serviceTitle{
+    margin-left: 18% !important;
+    text-align: justify;
+}
+.appoinmantDetials h3{
+text-align: start !important;
+margin-left: 13%;
+}
+.serviceTime {
+    width: 90% !important;
+}
+ textarea{
+     width: 70% ;
+     height: 80px;
+     margin-left: 15% !important;
+ } 
+ input {
+     width: 70% !important;
+     margin-left: 15% !important;
+ }
+
+}

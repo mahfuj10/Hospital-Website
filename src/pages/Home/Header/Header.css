@@ -1,0 +1,81 @@
+body, html{
+    /* height: 100%; */
+}
+
+/* ----------
+    Navbar
+---------- */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+nav a{
+    margin-left: 30px;
+    font-weight: 500;
+}
+nav button{
+    margin-left: 20px;
+}
+
+/* Header Banner */
+.headerText {
+    margin-left: 10%;
+    padding-top: 15%;
+    font-family: 'Poppins', sans-serif;
+}
+.headerText h1{
+    font-size: 50px;
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+.headerText p {
+    font-size: 19px;
+    width: 55%;
+    /* font-weight: 500; */
+    color: #fff;
+}
+
+/* ---------------------
+   media query
+----------------- */
+/* for mobile */
+
+@media (max-width:601px) {
+    body{
+        overflow-x: hidden;
+    }html{
+        overflow-x: hidden;
+    }
+ nav{
+     /* height: 90px !important;
+     width: 100% !important; */
+
+}   
+.webTitle{
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+header{
+/* width: 100% !important;
+height: 100% !important; */
+height: 100vh !important;
+}
+.headerText{
+    margin-left: 10px !important;
+    padding-top: 20% !important;
+}
+.headerText h1{
+    font-size: 24px;
+}
+.headerText p {
+    font-size: 16px;
+    width: 90%;
+margin-top: 20px;
+}
+#appoinmantBtn{
+    padding: 7px !important;
+}
+
+}

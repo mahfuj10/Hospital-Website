@@ -1,0 +1,40 @@
+.googleMap{
+    width: 60% !important;
+    display: flex;
+    height: 60vh;
+    margin-left: 16%;
+    margin-top: 10vh;
+}
+/* ---------------------
+   media query
+----------------- */
+/* for mobile */
+
+@media (max-width:601px) {
+    .googleMap{
+        width: 100% !important;
+        margin-left: 0%;
+    }
+    .contact-section{
+        display: grid !important;
+    }
+    .contact-section > aside{
+        margin-left: 2% !important;
+    }
+    input, textArea{
+        margin-left: 0% !important;
+        display: block !important;
+        width: 96% !important;
+    }
+    .cotactDetails{
+        width: 80% ;
+        margin-left: 10%;
+    }
+    .section-name{
+        margin-left: 5vh !important;
+        padding-top: 50vh !important;
+    }
+    .contact-banner{
+        height: 500px !important;
+    }
+}
