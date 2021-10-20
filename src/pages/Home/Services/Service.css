@@ -1,5 +1,7 @@
 /* service container */
-
+.departmentSpecialist{
+    margin-right: 40px;
+}
 .serviceContainer{
     display: grid;
     grid-template-columns: repeat(4,45vh);

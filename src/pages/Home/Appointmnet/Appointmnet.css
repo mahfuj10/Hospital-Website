@@ -1,6 +1,5 @@
 input{
-/* width: 100%; */
-/* height: 100%; */
+
 height: 50px !important;
 width: 450px;
 margin-bottom: 30px !important;
@@ -12,9 +11,7 @@ textarea::placeholder{
     padding-left: 20px;
 }
 
-/* set background color appoinment section */
 .detials{
-
 	position: absolute;
     background-color: red ;
     background: linear-gradient(to right, #FF9668, #fda37d);
@@ -32,7 +29,6 @@ display: grid;
 grid-template-columns: repeat(2,60vh);
 justify-content: center;
 align-items: center;
-margin-left: 4%;
 margin-top: 200px;
 }
 
