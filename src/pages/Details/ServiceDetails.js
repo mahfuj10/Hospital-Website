@@ -40,7 +40,7 @@ const department = departments?.find(service => service.id === departmentId);
         <article className="" style={{marginTop:"8vh"}}>
             <article className="row">
                 <aside className="col-lg-6 col-12">
-                    <img className="departmentImg img-fluid " width="450"  src={department?.image} alt="" />
+                    <img className="departmentImg img-fluid " style={{marginLeft:"50%"}} width="450"  src={department?.image} alt="" />
                 </aside>
                 <aside className="col-lg-6 col-12 ">
                     <aside style={{paddingLeft:"100px"}} className="department-title">
