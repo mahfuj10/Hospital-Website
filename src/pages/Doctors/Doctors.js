@@ -21,7 +21,7 @@ useEffect( () => {
 
 <article style={{backgroundImage:`url(${doctorBanner})`,height:"500px",backgroundSize:"cover",backgroundAttachment:"fixed"}}>
 
-<aside className="" style={{marginLeft:"20vh",paddingTop:"37vh"}}>
+<aside  style={{marginLeft:"20vh",paddingTop:"37vh",color:"black"}}>
     <h1>Doctors</h1>
     <h6>Home / <span >Doctors</span></h6>
 </aside>

@@ -5,6 +5,22 @@
     margin-left: 16%;
     margin-top: 10vh;
 }
+.singleDetials{
+    background-color: #fff ;
+    height: 120px;
+    width: 250px;
+    padding: 10px;
+
+}
+.singleDetials:hover{
+    background-color: #FF9366;
+    transition: 0.4s; 
+    color: whitesmoke;
+}
+input, textArea{
+    border: 1px solid rgb(184, 181, 181);
+}
+
 /* ---------------------
    media query
 ----------------- */

@@ -47,7 +47,7 @@ const { user, googleSignIn ,userLogin, userEmail, setUser, userPassword, setIslo
             signInWithEmailAndPassword(auth, email, password)
             .then(result => {
                 
-                setUser(result?.user)
+                setUser(result.user)
             })
         }
  
@@ -56,6 +56,7 @@ const { user, googleSignIn ,userLogin, userEmail, setUser, userPassword, setIslo
     const redirect_url = location.state?.from || "/home"; 
     
     const handaleGoogelSign = () => {
+    
 setIsloading(true)
         googleSignIn()
          .then(() => {

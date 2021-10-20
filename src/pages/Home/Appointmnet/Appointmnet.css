@@ -27,7 +27,7 @@ textarea::placeholder{
 	transform-origin: top right;
 
 }
-.appoinmantDetials{
+.appoinmantSection{
 display: grid;
 grid-template-columns: repeat(2,60vh);
 justify-content: center;
@@ -42,34 +42,35 @@ margin-top: 200px;
 ----------------- */
 /* for mobile */
 @media (max-width:601px) {
- .appoinmantDetials{
+ .appoinmantSection{
     grid-template-columns: repeat(1,1fr);
     row-gap: 50px;
+    margin-top: 100px;
  }  
  .detials{
      display: none;
  }
  .serviceTime aside{
      width:  70% !important;
-     margin-left: 18%;
+     margin-left: 10%;
  }
  .appoinmantDetials {
-    width: 90% !important;
+    width: 50% !important;
     margin-top: 100px;  
 }
-.appoinmantDetials  h2 , .serviceTitle{
-    margin-left: 18% !important;
+.appoinmantSection  h2 , .serviceTitle{
+    margin-left: 10% !important;
     text-align: justify;
 }
-.appoinmantDetials h3{
+.appoinmantSection h3{
 text-align: start !important;
-margin-left: 13%;
+margin-left: 10%;
 }
 .serviceTime {
-    width: 90% !important;
+    width: 100% !important;
 }
  textarea{
-     width: 70% ;
+     width: 40% ;
      height: 80px;
      margin-left: 15% !important;
  } 
@@ -77,5 +78,11 @@ margin-left: 13%;
      width: 70% !important;
      margin-left: 15% !important;
  }
+.appoinmentDetails{
+    width: 80% !important;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
 
 }

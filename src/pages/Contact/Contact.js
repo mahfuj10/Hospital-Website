@@ -23,62 +23,48 @@ const Contact = () => {
        <article className="d-flex contact-section">
         
          <aside className="" style={{marginTop:"60px",marginLeft:"16%"}}>
-            <h3 className="pb-4">Get in Touch</h3>
-            <textarea placeholder="Message" name="" id="" cols="96" rows="5"></textarea>
+            <h3 className="pb-4">Have a question fell free to contact with us !!!</h3>
+           
+            <span className="d-lg-flex gap-3 mt-3">
+                <input className="w-50 mt-3 mt-lg-0" type="text" placeholder="Enter your Name" />
+                <input className="w-50" type="email" placeholder="Enter your Email"/>
+            </span>
             <span className="d-lg-flex gap-3 mt-3">
                 <input className="w-50 mt-3 mt-lg-0" type="text" placeholder="Enter your Name" />
                 <input className="w-50" type="email" placeholder="Enter your Email"/>
             </span>
             <input type="text" style={{width:"730px"}} placeholder="Your Topic"/><br />
-
-            <button className="p-2 px-5" style={{border:"1px solid black",letterSpacing:"2px"}}>SEND</button>
+            <input type="text" style={{width:"730px"}} placeholder="Your Topic"/><br />
+            <textarea placeholder="Message" name="" id="" cols="96" rows="5"></textarea><br />
+            <button className="border-0 px-5 py-3 fw-bold btn-info mt-3" style={{backgroundColor:"#FF9668",color:"#fff",letterSpacing:"2px"}}>SEND</button>
          </aside>
 
          <aside className="contact-button" style={{marginLeft:"5%",marginTop:"5%"}}>
           
-            {/* <aside className="d-flex gap-3">
-              <span>
-                  <i class="fas fa-home fs-3 pt-2"></i>
-              </span>
-            <span>
-                <strong className="fs-5">Calefornia , USA</strong>
-                <p>Dh, Ai 2890</p>
-            </span>
+          
+            <aside className="cotactDetails px-5 " style={{display:"grid",rowGap:"30px"}}>
+
+              <aside className="singleDetials shadow">
+                <h5 className="text-center pt-3 mb-2"> Address</h5>
+                <h6 className="text-center"><i class="fas fa-map-marked-alt"></i> 21 Macron Road , California Usa </h6>
+              </aside>
+
+            <aside className="singleDetials shadow">
+                <h5 className="text-center pt-3 mb-2"> Phone</h5>
+                <h6 className="text-center"><i class="fas fa-mobile-alt"></i>  017343948393</h6>
             </aside>
 
-            <aside className="d-flex gap-3">
-              <span>
-                 <i class="fas fa-mobile-alt fs-3 pt-2"></i>
-              </span>
-            <span>
-                <strong className="fs-5">+238234838347</strong>
-                <p>Saturday to monday</p>
-            </span>
-            </aside>
+              <aside className="singleDetials shadow">
+                 <h5 className="text-center pt-3 mb-2"> Fax</h5>
+                <h6 className="text-center"><i class="fas fa-fax"></i> +23423423434</h6>
+              </aside>
 
-            <aside className="d-flex gap-3">
-              <span>
-                 <i class="far fa-envelope fs-3 pt-2"></i>
-              </span>
-            <span>
-                <strong className="fs-5">redux@gmail.com</strong>
-                <p>Anytime</p>
-            </span>
-            </aside> */}
+                <aside className="singleDetials shadow">
+                   <h5 className="text-center pt-3 mb-2"> Email</h5>
+                   <h6 className="text-center"><i class="fas fa-envelope"></i> Redexofficial@gmail.com</h6>
+                </aside>
 
-            <aside className="bg-info cotactDetails px-5 py-5">
 
-                <h5>Address</h5>
-                <p>21 Macron Road , California Usa </p>
-
-                <h5>Phone</h5>
-                <p>017343948393</p>
-
-                <h5>Fax</h5>
-                <p>+23423423434</p>
-
-                <h5>Email</h5>
-                <p>redexofficial@gmail.com</p>
             </aside>
           
          

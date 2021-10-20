@@ -1,5 +1,6 @@
 import {getAuth, signInWithPopup, GoogleAuthProvider,FacebookAuthProvider, onAuthStateChanged ,signOut,updateProfile,createUserWithEmailAndPassword,signInWithEmailAndPassword} from "firebase/auth";
 import { useEffect, useState } from "react";
+import { useHistory, useLocation } from "react-router";
 import firebaseInitalize from "../Firebase/FirebaseInitalize";
 
 const googleProvider = new GoogleAuthProvider();
@@ -9,9 +10,8 @@ firebaseInitalize();
 
 
 const UseFirebase = () => {
-    
+    // make a state
     const [ isLoading, setIsloading ] = useState(true);
-
     const auth = getAuth();
     const [ email, setEmail ] = useState('');
     const [ name, setName ] = useState('');
@@ -29,23 +29,9 @@ const UseFirebase = () => {
          setPassword(e.target.value);
      }
 
-     const userDisplayname = () => {
-
-        updateProfile(auth.currentUser, {
-            displayName: name
-          }).then(() => {
-            
-            // ...
-          }).catch((error) => {
-            // An error occurred
-            // ...
-          });
-    }
-
 
     const userLogin = ( ) => {
-  
-        signInWithEmailAndPassword (auth, email, password)
+        signInWithEmailAndPassword ( auth, email, password )
         
         .then(result => {
           setUser(result.user)
@@ -55,43 +41,39 @@ const UseFirebase = () => {
         })
       }
 
-    const handaleSignUp = () => {
+    const HandaleSignUp = () => {
 
-        if(password.length < 6){
-            return;
-        }
-       else{
-          createUserWithEmailAndPassword(auth, email, password)
-          .then(result => {
-            userDisplayname();
-                setUser(result.user)
+ setIsloading(true)
+      createUserWithEmailAndPassword(auth, email, password)
+      .then(result => {
+        userDisplayname();
+        setUser(result.user)    
           }).catch(error => {
               setError(error.message)
           })
-    }
+          setIsloading(false)
     }
 
-    const googleSignIn = () => {
+// display user name
+    const userDisplayname = () => {
+
+      updateProfile(auth.currentUser, {
+        displayName: name
+      }).then(() => {}).catch((error) => {});
+  }
+
+// google sign
+  
+const googleSignIn = () => {
 
  return   signInWithPopup(auth, googleProvider)
-            // .then(result => {
-            //     setUser(result.user);
-            // })
-            // .catch(error => {
-            //     setError(error.message);
-            // })
     }
     
-
+// facebook sign
     const signWithFacebook = () => {
 
      return signInWithPopup(auth, facebookProvider)
-            // .then(result => {
-            //     setError(result.user)
-            // })
-            // .catch(error => {
-            //     setError(error.message)
-            // })
+           
     }
 
 useEffect(()=>{
@@ -128,7 +110,9 @@ return {
     userEmail,
     userPassword,
     userLogin,
-    handaleSignUp
+    userDisplayname,
+    setUser,
+    HandaleSignUp
 
 }
 

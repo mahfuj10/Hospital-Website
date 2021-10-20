@@ -7,7 +7,7 @@ import './Header.css';
 const Navbar = () => {
     
     const linkStyle = {
-        color:"#FF9366",
+        color:"#f07946",
         marginBottom:"2px solid red"
     }
 
@@ -27,12 +27,12 @@ const handaleSingUpPath = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <Link to="/home" href className="navbar-brand webTitle" style={{marginLeft:"180px"}} >United Hospial</Link>
+          <Link to="/home" href className="navbar-brand webTitle" style={{marginLeft:"180px"}} >United Hospital</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav m-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <NavLink  className="nav-link active" activeStyle={linkStyle} aria-current="page" to='/home'>Home</NavLink>
               </li>
@@ -55,9 +55,9 @@ const handaleSingUpPath = () => {
             </ul>
             {
                     user.email &&
-                   <aside className="position-absolute" style={{marginLeft:"25%"}}>
+                   <aside className="position-absolute userProfile" style={{marginLeft:"55%"}}>
                         <img className="rounded-circle" width="46" height="46" src={user?.photoURL} alt="" />
-                    <span className="ms-2 text-primary">{user?.displayName}</span>
+                    <span className="ms-2" style={{color:"#f07946"}}>{user?.displayName}</span>
                    </aside>
                 }
                 { 
@@ -71,36 +71,7 @@ const handaleSingUpPath = () => {
           </div>
         </div>
       </nav>
-        //   <nav >
-              
-        //         <aside>
-        //             <h4 onClick={handaleLogoClick}>United Hospital</h4>
-        //         </aside>
-
-        //         <aside>
-        //             <NavLink to="/home">Home</NavLink>
-        //             <NavLink to="/about">About</NavLink>
-        //             <NavLink to="/doctors">Doctors</NavLink>
-        //             <NavLink to="/blog">Blog</NavLink>
-        //             <NavLink to="/contact">Contact</NavLink>
-        //         </aside>
-        //         {
-        //             user.email &&
-        //            <aside className="position-absolute" style={{marginLeft:"50%"}}>
-        //                 <img className="rounded-circle" width="46" height="46" src={user?.photoURL} alt="" />
-        //             <span className="ms-2 text-primary">{user?.displayName}</span>
-        //            </aside>
-        //         }
-        //         { 
-        //         ! user.email ?
-        //          <aside>
-        //             <button onClick={handaleLoginPath}>Log In</button>
-        //             <button onClick={handaleSingUpPath}>Sign Up</button>
-        //         </aside>  :
-        //         <button onClick={LogOut}> Sign Out</button>
-        //         }
-
-        //   </nav>
+      
     );
 };
 

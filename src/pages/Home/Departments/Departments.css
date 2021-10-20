@@ -51,6 +51,7 @@ border-left: 1px solid rgb(209, 207, 207); */
         margin-left: 10px !important;
         text-align: start !important;
     }
+    
 
     .itemContainer{
 grid-template-columns: repeat(1,1fr) !important;

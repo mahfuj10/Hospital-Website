@@ -7,11 +7,11 @@ const Appointmnet = () => {
    
     <section >
 
-<article className="detials "></article>
+<article className="detials"></article>
 
 {/* <section style={{display:"flex",justifyContent:"center",marginTop:"200px"}}> */}
      
-<section className="appoinmantDetials" >
+<section className="appoinmantSection " >
             
 <article className="serviceTime" >
 

@@ -6,11 +6,16 @@
     margin-top: 150px;
 }
 
-.singleDoctors{
-    background-color: rgb(245, 206, 192) !important;
+.singleDoctors:hover{
+    transition: 0.5s;
+    background-color: #f77037 ;
+    color: #fff;
 }
+
+
 .singleDoctors:hover .contactIcon i{
-    background-color: grey;
+    background-color: #fff;
+    color: #f77037;
     transition: 0.3s;
 }
  .contactIcon{
@@ -18,7 +23,7 @@
 
 }
 .contactIcon i{
-    background-color: orangered;
+    background-color: rgb(245, 125, 82);
     padding: 8px 10px;
     border-radius: 25px;
 }

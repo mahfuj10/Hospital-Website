@@ -14,9 +14,15 @@ nav{
 nav a{
     margin-left: 30px;
     font-weight: 500;
+    font-family: 'Poppins', sans-serif;
 }
 nav button{
     margin-left: 20px;
+    border: none;
+    background-color: #f07946;
+    padding: 6px 14px;
+    border-radius: 3px;
+    color: white;
 }
 
 /* Header Banner */
@@ -53,6 +59,10 @@ nav button{
      width: 100% !important; */
 
 }   
+.userProfile{
+    margin-left: 0 !important;
+margin-bottom: 20px ;
+}
 .webTitle{
     padding-left: 0 !important;
     margin-left: 0 !important;
